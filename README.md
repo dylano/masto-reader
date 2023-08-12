@@ -40,19 +40,19 @@ npm i
 npm run dev
 ```
 
-For HMR support use http://localhost:5173/ link by default. tRPC endpoint is http://localhost:5000/
+For HMR support use http://localhost:5173/ link by default. tRPC endpoint is http://localhost:5100/
 
 You can also start client and server separately. Use `npm run dev:server` to start server and `npm run dev:client` to start client
 
 ### Testing
 
-Unit test are living in `tests` directory. To execute them, run: 
+Unit test are living in `tests` directory. To execute them, run:
 
 ```bash
 npm run test
 ```
 
-E2E UI tests are livind in `e2e` directory. To execute them, run: 
+E2E UI tests are livind in `e2e` directory. To execute them, run:
 
 ```bash
 npm run e2e

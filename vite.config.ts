@@ -1,14 +1,14 @@
-import { defineConfig } from "vitest/config";
-import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from 'vitest/config';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
     proxy: {
-      "/trpc": "http://localhost:5000/",
+      '/trpc': 'http://localhost:5100/',
     },
   },
-  build: { outDir: "dist/public" },
+  build: { outDir: 'dist/public' },
   plugins: [svelte()],
-  test: { dir: "tests" },
+  test: { dir: 'tests' },
 });
