@@ -7,6 +7,8 @@ export default defineConfig({
     proxy: {
       '/trpc': 'http://localhost:5100/',
     },
+    open: true,
+    strictPort: true,
   },
   build: { outDir: 'dist/public' },
   plugins: [svelte()],
